@@ -1,13 +1,7 @@
 import { destructuringFunction } from "./function";
 
-export default function JsxComponent({
-  name,
-  age,
-}: {
-  name: string;
-  age: number;
-}) {
-  const nameAndAge = destructuringFunction({ name, age });
+export default function JsxComponent() {
+  const nameAndAge = destructuringFunction({ name: "john", age: 12 });
   return (
     <div style={{ backgroundColor: "red", color: "white" }} className="footer">
       <p>this is JSX</p>
