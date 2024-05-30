@@ -3,7 +3,7 @@ import { Validation, album } from "./declaration-merging";
 import JsxComponent from "./jsx-component";
 import { mixedInstance } from "./mixins";
 import { petNames } from "./optional-chaining";
-import { ClojurePhonebook } from "./pcp-aufgaben";
+import { ClojurePhonebook, fib, processNames } from "./pcp-aufgaben";
 import { age, name, point, printId, street, userId } from "./types";
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
   // console.log('PersonName:', name);
   // console.log('PersonAge:', age);
   // console.log('Street:', street);
-  
 
   // Mixins
   // console.log('mixedInstance.baseProperty:', mixedInstance.baseProperty); // "base property"
@@ -31,11 +30,16 @@ function App() {
   // mixedInstance.toggleActive();
   // console.log('mixedInstance.isActive:', mixedInstance.isActive); // false
 
+  // Prolog-Aufgabe
+  // console.log("Die 7. Fibonacci-Zahl ist:", fib);
+
+  // Java-Aufgabe
+  // console.log("processNames:", processNames());
 
   return (
     <div className="App">
       <h1>TypeScript</h1>
-      {/* <JsxComponent /> */}
+      {/* <JsxComponent />  */}
       {/* <ClojurePhonebook /> */}
     </div>
   );
