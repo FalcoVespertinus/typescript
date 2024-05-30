@@ -26,8 +26,8 @@ export namespace Validation {
   };
 }
 
-console.log('Validation.isValid("hello"): ', Validation.isValid("hello")); // true
-console.log('Validation.isNumber("1234"): ', Validation.isNumber("1234")); // true
+// console.log('Validation.isValid("hello"): ', Validation.isValid("hello")); // true
+// console.log('Validation.isNumber("1234"): ', Validation.isNumber("1234")); // true
 
 // Class und Module Merging
 export class Album {
@@ -43,4 +43,4 @@ export namespace Album {
 export const album = new Album();
 album.label = new Album.AlbumLabel();
 album.label.name = "Awesome Album";
-console.log('album.label.name:', album.label.name);
+// console.log('album.label.name:', album.label.name);
