@@ -7,16 +7,18 @@ type PhoneBookEntry = {
   phone: number;
 };
 
-const initialPhoneBook: PhoneBookEntry[] = [
+type PhoneBook = PhoneBookEntry[];
+
+const globalPhoneBook: PhoneBook = [
   { name: "Adam", phone: 4711 },
   { name: "Eva", phone: 4712 },
 ];
 
 const ClojurePhonebook = () => {
-  const [phoneBook, setPhoneBook] = useState(initialPhoneBook);
+  const [phoneBook, setPhoneBook] = useState(globalPhoneBook);
 
   const lookAt = (entryName: string) =>
-    initialPhoneBook.find(({ name }) => name === entryName)?.phone ?? false;
+    globalPhoneBook.find(({ name }) => name === entryName)?.phone ?? false;
 
   const addEntry = (newEntry: PhoneBookEntry) =>
     setPhoneBook([...phoneBook, newEntry]);
