@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//
 // Clojure 3 Aufgabe 5
 
 type PhoneBookEntry = {
@@ -43,12 +44,14 @@ export const ClojurePhonebook = () => {
   );
 };
 
+//
 // Prolog 3 Aufgabe 1. Endrekursive Fibonacci-Berechnung mit Ein- und Ausgabe
+
 function fibonacci(num: number, a: number = 0, b: number = 1): number {
-  if (num == 0) {
+  if (num === 0) {
     return a;
   }
-  if (num == 1) {
+  if (num === 1) {
     return b;
   }
 
@@ -57,3 +60,16 @@ function fibonacci(num: number, a: number = 0, b: number = 1): number {
 
 export const fib = fibonacci(7);
 console.log("Die 7. Fibonacci-Zahl ist:", fib);
+
+//
+// Java Woche 8 Aufgabe 4
+
+const names = ["Susanna", "Joe", "Lu", "Timmy", "Rafael", "Lisa"];
+
+export const processNames = () =>
+  names
+    .filter((name) => name.length >= 3 && name.length <= 4)
+    .map((name) => name.toLocaleUpperCase())
+    .join(" ");
+
+console.log("processNames:", processNames());
