@@ -19,9 +19,10 @@ function App() {
   // console.log(point);
   // printId(userId);
   // printId(456.78);
-  console.log('PersonName:', name);
-  console.log('PersonAge:', age);
-  console.log('Street:', street);
+  // console.log('PersonName:', name);
+  // console.log('PersonAge:', age);
+  // console.log('Street:', street);
+  
 
   // Mixins
   // console.log('mixedInstance.baseProperty:', mixedInstance.baseProperty); // "base property"
