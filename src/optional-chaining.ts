@@ -11,5 +11,5 @@ const person2: Person = { name: "susan", age: 10, pet: { name: "fluffy" } };
 
 export const petNames = [person1, person2].map(({ pet }) => pet?.name);
 
-console.log(petNames);
+console.log('petNames: ', petNames);
 // output: [undefined, 'fluffy']

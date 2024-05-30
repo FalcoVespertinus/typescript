@@ -42,3 +42,18 @@ export const ClojurePhonebook = () => {
     </div>
   );
 };
+
+// Prolog 3 Aufgabe 1. Endrekursive Fibonacci-Berechnung mit Ein- und Ausgabe
+function fibonacci(num: number, a: number = 0, b: number = 1): number {
+  if (num == 0) {
+    return a;
+  }
+  if (num == 1) {
+    return b;
+  }
+
+  return fibonacci(num - 1, b, a + b);
+}
+
+export const fib = fibonacci(7);
+console.log("Die 7. Fibonacci-Zahl ist:", fib);
