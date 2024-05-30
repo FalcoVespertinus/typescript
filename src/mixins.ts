@@ -22,9 +22,9 @@ class BaseClass {
 
 const MixedClass = Activatable(Timestamped(BaseClass));
 
-const mixedInstance = new MixedClass();
-console.log(mixedInstance.baseProperty); // "base property"
-console.log(mixedInstance.timestamp); // aktuelles Datum und Uhrzeit
-console.log(mixedInstance.isActive); // true
+export const mixedInstance = new MixedClass();
+console.log('mixedInstance.baseProperty:', mixedInstance.baseProperty); // "base property"
+console.log('mixedInstance.timestamp:', mixedInstance.timestamp); // aktuelles Datum und Uhrzeit
+console.log('mixedInstance.isActive:', mixedInstance.isActive); // true
 mixedInstance.toggleActive();
-console.log(mixedInstance.isActive); // false
+console.log('mixedInstance.isActive:', mixedInstance.isActive); // false
